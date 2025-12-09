@@ -949,106 +949,68 @@ body {
   color: var(--primary);
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .dashboard-sidebar {
-    width: 220px;
-  }
+/* From Uiverse.io by nathann09 */ 
+.form {
+  background-color: #fff;
+  display: block;
+  padding: 1rem;
+  max-width: 350px;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-@media (max-width: 768px) {
-  .mobile-menu-btn {
-    display: flex;
-  }
-
-  .nav-links {
-    position: fixed;
-    top: 65px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    background-color: var(--background);
-    border-bottom: 1px solid var(--border);
-    padding: 20px;
-    gap: 16px;
-    transform: translateY(-100%);
-    opacity: 0;
-    transition: all 0.3s;
-    box-shadow: var(--shadow-lg);
-  }
-
-  .nav-links.active {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  .hero-content {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-title {
-    font-size: 40px;
-  }
-
-  .section-title {
-    font-size: 32px;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .pricing-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .dashboard-layout {
-    flex-direction: column;
-  }
-
-  .dashboard-sidebar {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .sidebar-nav {
-    flex-direction: row;
-    overflow-x: auto;
-  }
-
-  .sidebar-link {
-    white-space: nowrap;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .table-container {
-    overflow-x: scroll;
-  }
+.form-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
 }
 
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 32px;
-  }
+.input-container {
+  position: relative;
+}
 
-  .hero-cta {
-    flex-direction: column;
-  }
+.input-container input, .form button {
+  outline: none;
+  border: 1px solid #e5e7eb;
+  margin: 8px 0;
+}
 
-  .btn {
-    width: 100%;
-  }
+.input-container input {
+  background-color: #fff;
+  padding: 1rem;
+  padding-right: 3rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.submit {
+  display: block;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: #4F46E5;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.signup-link {
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+.signup-link a {
+  text-decoration: underline;
 }

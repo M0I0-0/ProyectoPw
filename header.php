@@ -17,8 +17,8 @@
                 </button>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="index.php">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
                     <li><a href="contacto.php">Contacto</a></li>
+                    <li><a href="login.php">Iniciar Sesion</a></li>
                 </ul>
             </nav>
         </div>

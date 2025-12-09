@@ -47,7 +47,7 @@ include 'header.php';
                         </div>
                     </div>
                     <div class="hero-cta">
-                        <a href="#contacto" class="btn btn-primary">Cotiza Ahora</a>
+                        <a href="contacto.php" class="btn btn-primary">Cotiza Ahora</a>
                         <a href="#servicios" class="btn btn-secondary">Conocer Más</a>
                     </div>
                 </div>
