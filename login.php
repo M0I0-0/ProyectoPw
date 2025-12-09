@@ -8,7 +8,6 @@
     <meta name="description" content="Página de inicio de sesión para AutoSeguro">
 </head>
 <body>
-    <!-- From Uiverse.io by nathann09 --> 
 
     <form class="form">
        <p class="form-title">Sign in to your account</p>

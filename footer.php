@@ -16,14 +16,6 @@
                     </p>
                 </div>
                 <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul class="footer-links">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
                     <h4>Contacto</h4>
                     <ul class="footer-contact">
                         <li>
@@ -44,7 +36,7 @@
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                                 <circle cx="12" cy="10" r="3"/>
                             </svg>
-                            <span>Ciudad de México, México</span>
+                            <span>Mérida, Yucatán</span>
                         </li>
                     </ul>
                 </div>
