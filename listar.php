@@ -12,20 +12,7 @@ $result = $conexion->query("SELECT * FROM solicitudes ORDER BY id DESC");
 <head>
     <meta charset="UTF-8">
     <title>Solicitudes Registradas</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 8px;
-        }
-        img {
-            max-width: 150px;
-            border-radius: 4px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 

@@ -6,9 +6,6 @@
     <meta name="description" content="Protege tu vehículo con los mejores seguros de auto. Cobertura completa, precios competitivos y atención personalizada.">
     <title>Seguro de Autos - Protección Completa para tu Vehículo</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,7 +13,6 @@
 include 'header.php'; 
 ?>
 
-    <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="container">
             <div class="hero-content">
@@ -47,7 +43,7 @@ include 'header.php';
                         </div>
                     </div>
                     <div class="hero-cta">
-                        <a href="contacto.php" class="btn btn-primary">Cotiza Ahora</a>
+                        <a href="solicitud.php" class="btn btn-primary">Solicitar Ahora</a>
                         <a href="#servicios" class="btn btn-secondary">Conocer Más</a>
                     </div>
                 </div>
@@ -58,7 +54,6 @@ include 'header.php';
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="servicios" class="services">
         <div class="container">
             <div class="section-header">
@@ -135,7 +130,6 @@ include 'header.php';
         </div>
     </section>
 
-    <!-- Video Section -->
     <section id="video" class="video-section">
         <div class="container">
             <div class="section-header">

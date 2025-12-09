@@ -9,25 +9,21 @@
 </head>
 <body>
 
-    <form class="form">
-       <p class="form-title">Sign in to your account</p>
-        <div class="input-container">
-          <input type="email" placeholder="Enter email">
-          <span>
-          </span>
-      </div>
-      <div class="input-container">
-          <input type="password" placeholder="Enter password">
-        </div>
-         <button type="submit" class="submit">
-        Sign in
-      </button>
+    <form class="form" action="validarlog.php" method="POST">
+        <p class="form-title">Iniciar Sesión</p>
 
-      <p class="signup-link">
-        No account?
-        <a href="">Sign up</a>
-      </p>
-   </form>
+        <div class="input-container">
+            <input type="email" name="email" required placeholder="Enter email">
+        </div>
+
+        <div class="input-container">
+            <input type="password" name="password" required placeholder="Enter password">
+        </div>
+
+        <button type="submit" class="submit">
+            Sign in
+        </button>
+    </form>
 
 </body>
 </html>

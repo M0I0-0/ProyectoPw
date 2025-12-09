@@ -473,24 +473,19 @@ body {
 /* --- Estilos del Mapa --- */
 .contact-map iframe {
     width: 100%;
-    /* Altura mínima para que se vea bien junto al formulario largo */
     min-height: 800px; 
     border-radius: 10px;
 }
 
-/* Contenedor del formulario */
 .form {
     background-color: #ffffff;
-    width: 350px; /* Ancho fijo */
-    margin: 200px auto; /* Truco para centrar horizontalmente */
+    width: 350px; 
+    margin: 200px auto; 
     padding: 30px;
     border: 1px solid #e1e1e1;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    box-sizing: border-box; /* Importante para que el padding no cambie el ancho */
 }
 
-/* Título */
 .form-title {
     color: #333333;
     font-size: 1.5rem;
@@ -499,12 +494,10 @@ body {
     margin-bottom: 25px;
 }
 
-/* Contenedores de los inputs */
 .input-container {
     margin-bottom: 15px;
 }
 
-/* Estilo de los Inputs */
 .input-container input {
     width: 100%;
     padding: 12px;
@@ -512,17 +505,13 @@ body {
     border-radius: 5px;
     background-color: #fff;
     font-size: 14px;
-    box-sizing: border-box; /* Asegura que el input no se salga de la caja */
-    outline: none;
 }
 
 .input-container input:focus {
     border-color: #0056b3; /* Color azul al escribir */
 }
 
-/* Botón de Iniciar Sesión */
 .submit {
-    display: block;
     width: 100%;
     padding: 12px;
     background-color: #0056b3;
@@ -539,7 +528,6 @@ body {
     background-color: #004494;
 }
 
-/* Link de registro */
 .signup-link {
     text-align: center;
     font-size: 14px;
@@ -551,4 +539,52 @@ body {
     color: #0056b3;
     text-decoration: none;
     font-weight: bold;
+}
+
+
+/* formulario */
+
+/* --- Estilos para la Tabla de Solicitudes --- */
+
+h2 {
+    text-align: center;
+    color: #0056b3;
+    font-family: 'Inter', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse; /* Elimina doble borde entre celdas */
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+thead {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e1e1e1;
+    color: #333333;
+    vertical-align: middle; 
+}
+
+td img {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ddd;
 }

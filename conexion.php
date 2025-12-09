@@ -1,14 +1,12 @@
 <?php
-$host = "localhost";
-$usuario = "root";
-$contrasena = "";
-$bdd = "proyecto";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "proyecto";  // o el nombre correcto de tu BD
 
+$conn = new mysqli($servername, $username, $password, $database);
 
-$conectar = mysqli_connect($host, $usuario, $contrasena, $bdd);
-
-
-if(!$conectar)  {
-  echo "no se pudo conectar con el servidor";
+if ($conn->connect_error) {
+    die("Error de conexión: " . $conn->connect_error);
 }
- ?>
+?>

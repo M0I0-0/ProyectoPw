@@ -8,9 +8,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 <body>
-    <?php
-include 'header.php';
-?>
     <div id="contacto" class="contact">
         <div class="container">
             <div class="section-header">
@@ -19,7 +16,7 @@ include 'header.php';
             </div>
             <div class="contact-grid">
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm" method="post" action="guardar.php">
+                    <form class="contact-form" id="contactForm" method="post" action="guardar.php" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="name">Nombre Completo</label>
                             <input type="text" id="name" name="name">
@@ -81,16 +78,6 @@ include 'header.php';
 
                         <button id="btn_enviar" type="submit" class="btn btn-primary btn-full">Enviar Solicitud</button>
                     </form>
-                </div>
-                <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39249.18348242724!2d-89.66171138230918!3d21.008121389572445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56715c77aca301%3A0x9f900e123e02a7ab!2sHDI%20SEGUROS%20M%C3%A9rida!5e0!3m2!1ses-419!2smx!4v1765313339988!5m2!1ses-419!2smx" 
-                        width="600" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
                 </div>
             </div>
         </div>
