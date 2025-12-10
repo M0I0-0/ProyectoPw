@@ -4,42 +4,36 @@ require "conexion.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $email    = $_POST["email"];
+    $password = $_POST["password"];
 
-    $sql = "SELECT id, nombre, email, password FROM usuarios WHERE email = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $email);
-    $stmt->execute();
-    $resultado = $stmt->get_result();
+    // Consulta directa y sencilla
+    $sql = "SELECT * FROM usuarios 
+            WHERE email = '$email' 
+            AND password = '$password'";
 
-    if ($resultado->num_rows == 1) {
-        $usuario = $resultado->fetch_assoc();
+    $resultado = mysqli_query($conn, $sql);
 
-        // Validación SIN HASH
-        if ($password === $usuario['password']) {
+    if (mysqli_num_rows($resultado) > 0) {
 
-            $_SESSION['usuario_id'] = $usuario['id'];
-            $_SESSION['usuario_nombre'] = $usuario['nombre'];
+        $usuario = mysqli_fetch_assoc($resultado);
 
-            echo "<script>
-                    window.location.href = 'dashboard.php';
-                  </script>";
-            exit();
+        $_SESSION["usuario_id"] = $usuario["id"];
+        $_SESSION["usuario_nombre"] = $usuario["nombre"];
 
-        } else {
-            echo "<script>
-                    alert('Usuario o contraseña incorrectos');
-                    window.location.href = 'login.php';
-                  </script>";
-            exit();
-        }
+        echo "
+        <script>
+            window.location = 'dashboard.php';
+        </script>";
+        exit();
 
     } else {
-        echo "<script>
-                alert('Usuario o contraseña incorrectos');
-                window.location.href = 'login.php';
-              </script>";
+
+        echo "
+        <script>
+            alert('Usuario o contraseña incorrectos');
+            window.location = 'login.php';
+        </script>";
         exit();
     }
 }
