@@ -1,11 +1,5 @@
 <?php
-// === Conexión a la base de datos ===
-$conexion = new mysqli("localhost", "root", "", "proyecto");
-
-if ($conexion->connect_errno) {
-    die("Error al conectar: " . $conexion->connect_error);
-}
-
+require "conexion.php";
 // === Validar que el formulario fue enviado ===
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 

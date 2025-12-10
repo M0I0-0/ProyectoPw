@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
+<div class="contenedor">
 
-    <div class="dashboard-header">
-        <h1>Dashboard</h1>
-        <a href="index.php" class="btn-logout">Cerrar sesión</a>
+    <?php 
+    include("menu.php")
+    ?>
+
+    <div class="contenido">
+        <h2>Dashboard Princial Del Administrador</h2>
+
+        <div class="img-panel">
+            <img src="imagenes/img_para_dashboard.png" alt="Imagen del Panel">
+        </div>
     </div>
 
-    <div class="dashboard-contenedor">
-        <ul class="dashboard-menu">
-            <li><a href="contacto.php">Agregar Nuevo Cliente</a></li>
-            <li><a href="listar.php">Listar Usuarios</a></li>
-        </ul>
-    </div>
+</div>  
 
 </body>
 </html>

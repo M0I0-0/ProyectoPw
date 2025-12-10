@@ -11,11 +11,12 @@
     <div id="contacto" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Contáctanos</h2>
-                <p class="section-description">Solicita tu cotización sin compromiso</p>
+                <h2 class="section-title">Formalario Para Dar De Alta</h2>
+                <p class="section-description">Aqui podras llenar los datos de nuestros candidatos para nuestro seguro</p>
+                <a class="btnrojo" href="dashboard.php">Cancelar</a>
             </div>
             <div class="contact-grid">
-                <div class="contact-form-wrapper">
+                <div>
                     <form class="contact-form" id="contactForm" method="post" action="guardar.php" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="name">Nombre Completo</label>
@@ -76,7 +77,7 @@
                             <p>Formato aceptado: JPG, PNG. Tamaño máximo recomendado: 5MB.</p>
                         </div>
 
-                        <button id="btn_enviar" type="submit" class="btn btn-primary btn-full">Enviar Solicitud</button>
+                        <button id="btn_enviar" type="submit" class="btn">Enviar Solicitud</button>
                     </form>
                 </div>
             </div>

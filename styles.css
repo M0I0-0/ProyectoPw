@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Fundamental para que los bordes no rompan el ancho */
+    box-sizing: border-box;
 }
 
 body {
@@ -10,14 +10,12 @@ body {
     background-color: #ffffff;
 }
 
-/* --- Layout General --- */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* --- Botones --- */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -27,15 +25,8 @@ body {
     margin-right: 10px;
     border: none;
     cursor: pointer;
-}
-
-.btn-primary {
     background-color: #0056b3;
     color: #ffffff;
-}
-
-.btn-primary:hover {
-    background-color: #004494;
 }
 
 .btn-secondary {
@@ -44,28 +35,19 @@ body {
     color: #0056b3;
 }
 
-.btn-secondary:hover {
-    background-color: #0056b3;
-    color: #ffffff;
-}
-
-/* --- Hero Section --- */
 .hero {
     padding: 80px 0;
     background-color: #f8f8fa;
-
-    /* usar inline-block para columnas */
-    font-size: 0; /* elimina espacio entre inline-block hijos */
+    font-size: 0;
 }
 
-/* Columnas con inline-block en lugar de float */
 .hero-text {
     display: inline-block;
     vertical-align: top;
     width: 50%;
     padding-right: 40px;
     padding-top: 20px;
-    font-size: 16px; /* restaurar tamaño de fuente para el contenido */
+    font-size: 16px;
 }
 
 .hero-image {
@@ -95,13 +77,12 @@ body {
     margin-bottom: 30px;
 }
 
-/* Features (Iconos pequeños) usando inline-block */
 .hero-features {
     margin-bottom: 30px;
 }
 
 .feature-item {
-    display: inline-block; /* Elementos en línea */
+    display: inline-block;
     margin-right: 20px;
     color: #333333;
     font-weight: 500;
@@ -114,7 +95,6 @@ body {
     margin-right: 5px;
 }
 
-/* --- Services Section --- */
 .services {
     padding: 80px 0;
     background-color: #ffffff;
@@ -136,21 +116,20 @@ body {
     font-size: 1.1rem;
 }
 
-/* Grid de servicios usando inline-block en lugar de float */
 .services-grid {
-    margin: 0 -15px; /* Compensar padding de las columnas */
-    font-size: 0; /* elimina espacios entre columnas inline-block */
+    margin: 0 -15px;
+    font-size: 0;
 }
 
 .service-card {
-    display: inline-block; /* reemplaza float:left */
+    display: inline-block;
     vertical-align: top;
-    width: 33.3333%; /* 3 columnas exactas */
-    padding: 0 15px; /* Espaciado entre columnas */
+    width: 33.3333%;
+    padding: 0 15px;
     margin-bottom: 30px;
     text-align: center;
     box-sizing: border-box;
-    font-size: 16px; /* restaurar tamaño de fuente del contenido */
+    font-size: 16px;
 }
 
 .service-icon {
@@ -172,7 +151,6 @@ body {
     font-size: 0.95rem;
 }
 
-/* --- Video Section --- */
 .video-section {
     padding: 60px 0;
     background-color: #f8f8fa;
@@ -184,10 +162,9 @@ body {
     margin: 0 auto;
 }
 
-/* Truco para hacer el iframe responsive sin flex */
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* Ratio 16:9 */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     border-radius: 10px;
@@ -207,7 +184,6 @@ body {
 }
 
 .nav {
-    /* El truco del font-size 0 para eliminar espacios */
     font-size: 0;
     padding: 15px 0;
 }
@@ -215,8 +191,8 @@ body {
 .logo {
     display: inline-block;
     vertical-align: middle;
-    width: 30%; /* Espacio para el logo */
-    font-size: 1.5rem; /* Restauramos tamaño fuente */
+    width: 30%;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #0056b3;
 }
@@ -231,18 +207,17 @@ body {
     vertical-align: middle;
 }
 
-/* Contenedor de enlaces alineado a la derecha */
 .nav-links {
     display: inline-block;
     vertical-align: middle;
-    width: 70%; /* El resto del espacio */
-    text-align: right; /* Empuja los items a la derecha */
+    width: 70%;
+    text-align: right;
     list-style: none;
-    font-size: 1rem; /* Restauramos tamaño fuente */
+    font-size: 1rem;
 }
 
 .nav-links li {
-    display: inline-block; /* Items en línea */
+    display: inline-block;
     margin-left: 30px;
 }
 
@@ -252,37 +227,29 @@ body {
     font-weight: 500;
 }
 
-.nav-links a:hover {
-    color: #0056b3;
-}
-
-/* --- Footer Styles --- */
 .footer {
-    background-color: #333333; /* Fondo oscuro elegante */
+    background-color: #333333;
     color: #ffffff;
     padding: 70px 0 20px 0;
-    margin-top: auto; /* Si el contenido es corto, empuja el footer abajo */
+    margin-top: auto;
 }
 
-/* Contenedor de las columnas (el padre) */
 .footer-content {
-    font-size: 0; /* Truco: elimina espacios en blanco entre inline-blocks */
-    margin: 0 -15px; /* Compensación negativa para el padding de las columnas */
-    text-align: left; /* Alineación general */
+    font-size: 0;
+    margin: 0 -15px;
+    text-align: left;
 }
 
-/* Las 3 Columnas */
 .footer-section {
     display: inline-block;
-    vertical-align: top; /* Alinea el contenido arriba */
-    width: 33.3333%; /* Tres columnas iguales */
-    padding: 0 15px; /* Espaciado interno lateral */
-    box-sizing: border-box; /* Básico para que no se rompa la grilla */
-    font-size: 16px; /* Restauramos el tamaño de fuente legible */
+    vertical-align: top;
+    width: 33.3333%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size: 16px;
     margin-bottom: 40px;
 }
 
-/* --- Estilos del Logo en Footer --- */
 .footer-logo {
     display: block;
     margin-bottom: 20px;
@@ -294,7 +261,7 @@ body {
 .footer-logo svg {
     vertical-align: middle;
     margin-right: 10px;
-    color: #0056b3; /* El icono mantiene el azul de la marca */
+    color: #0056b3;
 }
 
 .footer-logo span {
@@ -305,22 +272,19 @@ body {
     color: #cccccc;
     font-size: 0.95rem;
     line-height: 1.6;
-    max-width: 90%; /* Evita que el texto sea muy ancho */
+    max-width: 90%;
 }
 
-/* --- Títulos de Secciones --- */
 .footer-section h4 {
     color: #ffffff;
     font-size: 1.2rem;
     margin-bottom: 25px;
     font-weight: 600;
-    /* Pequeña línea decorativa debajo del título */
-    border-bottom: 2px solid #0056b3; 
+    border-bottom: 2px solid #0056b3;
     display: inline-block;
     padding-bottom: 10px;
 }
 
-/* --- Listas de Enlaces --- */
 .footer-links, 
 .footer-contact {
     list-style: none;
@@ -338,26 +302,18 @@ body {
     display: block;
 }
 
-.footer-links a:hover {
-    color: #ffffff;
-    padding-left: 5px; /* Pequeño desplazamiento al pasar el mouse */
-    color: #0056b3;
-}
-
-/* --- Lista de Contacto con Iconos --- */
 .footer-contact li {
     margin-bottom: 15px;
     color: #cccccc;
     font-size: 0.95rem;
 }
 
-/* Alineación de iconos de contacto sin Flexbox */
 .footer-contact li svg {
-    vertical-align: middle; /* Centra el icono con el texto */
+    vertical-align: middle;
     margin-right: 10px;
     color: #0056b3;
     position: relative;
-    top: -1px; /* Ajuste fino óptico */
+    top: -1px;
 }
 
 .footer-contact li span {
@@ -365,7 +321,7 @@ body {
 }
 
 .footer-bottom {
-    border-top: 1px solid #444444; /* Línea separadora sutil */
+    border-top: 1px solid #444444;
     padding-top: 25px;
     margin-top: 20px;
     text-align: center;
@@ -373,56 +329,51 @@ body {
     color: #888888;
 }
 
-/* --- Contacto / Formulario Section --- */
 .contact {
     padding: 80px 0;
-    background-color: #f8f8fa; /* Fondo gris claro para diferenciar la sección */
+    background-color: #f8f8fa;
 }
 
-/* Layout de columnas (Formulario izquierda, Mapa derecha) */
 .contact-grid {
-    font-size: 0; /* Eliminar espacios entre bloques inline-block */
-    margin: 0 -15px; /* Compensar padding de columnas */
+    font-size: 0;
+    margin: 0 -15px;
 }
 
 .contact-form-wrapper {
     display: inline-block;
     vertical-align: top;
-    width: 60%; /* Damos más espacio al formulario (60%) */
+    width: 60%;
     padding: 0 15px;
-    font-size: 16px; /* Restaurar fuente */
+    font-size: 16px;
 }
 
 .contact-map {
     display: inline-block;
     vertical-align: top;
-    width: 40%; /* El mapa ocupa el 40% restante */
+    width: 40%;
     padding: 0 15px;
     font-size: 16px;
-    height: 100%; /* Para intentar igualar altura */
+    height: 100%;
 }
 
-/* --- Estilos de la Tarjeta del Formulario --- */
 .contact-form {
     background-color: #ffffff;
     padding: 40px;
     border-radius: 10px;
 }
 
-/* --- Grupos de Inputs --- */
 .form-group {
     margin-bottom: 20px;
 }
 
 .form-group label {
-    display: block; /* Label encima del input */
+    display: block;
     margin-bottom: 8px;
     font-weight: 600;
     color: #333333;
     font-size: 0.95rem;
 }
 
-/* Estilos para todos los inputs, selects y textareas */
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="tel"],
@@ -439,48 +390,29 @@ body {
     background-color: #ffffff;
 }
 
-/* Efecto al hacer clic en un input */
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #0056b3; /* Azul primario */
-}
-
-/* Estilo para el input de archivo (file) */
 .form-group input[type="file"] {
     padding: 10px;
     background-color: #f8f9fa;
     border: 1px dashed #dde2e5;
 }
 
-.form-group small {
+.form-group {
     display: block;
     margin-top: 5px;
     color: #888;
     font-size: 0.85rem;
 }
 
-/* Botón de envío ancho completo */
-.btn-full {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-    padding: 15px;
-    font-size: 1.1rem;
-}
-
-/* --- Estilos del Mapa --- */
 .contact-map iframe {
     width: 100%;
-    min-height: 800px; 
+    min-height: 800px;
     border-radius: 10px;
 }
 
 .form {
     background-color: #ffffff;
-    width: 350px; 
-    margin: 200px auto; 
+    width: 350px;
+    margin: 200px auto;
     padding: 30px;
     border: 1px solid #e1e1e1;
     border-radius: 10px;
@@ -508,7 +440,7 @@ body {
 }
 
 .input-container input:focus {
-    border-color: #0056b3; /* Color azul al escribir */
+    border-color: #0056b3;
 }
 
 .submit {
@@ -524,10 +456,6 @@ body {
     margin-top: 10px;
 }
 
-.submit:hover {
-    background-color: #004494;
-}
-
 .signup-link {
     text-align: center;
     font-size: 14px;
@@ -541,11 +469,6 @@ body {
     font-weight: bold;
 }
 
-
-/* formulario */
-
-/* --- Estilos para la Tabla de Solicitudes --- */
-
 h2 {
     text-align: center;
     color: #0056b3;
@@ -558,7 +481,7 @@ h2 {
 table {
     width: 90%;
     margin: 0 auto;
-    border-collapse: collapse; /* Elimina doble borde entre celdas */
+    border-collapse: collapse;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
 }
@@ -574,12 +497,11 @@ th {
     font-weight: 600;
 }
 
-
 td {
     padding: 12px 15px;
     border-bottom: 1px solid #e1e1e1;
     color: #333333;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
 td img {
@@ -587,4 +509,50 @@ td img {
     height: auto;
     border-radius: 4px;
     border: 1px solid #ddd;
+}
+.menu-lateral {
+    width: 250px;
+    background-color: #162B3C;
+    padding: 15px;
+    margin-right: 25px;
+}
+
+.menu-lateral .opcion {
+    border-bottom: 1px dashed #fff;
+    padding: 12px 5px;
+}
+
+.menu-lateral a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.contenedor {
+    display: flex;
+    width: 100%;
+    padding-right: 27px;
+}
+.img-panel img {
+    width: 500px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.contenido {
+    flex: 1;
+    background-color: #fff;
+    border-left: 1px solid #bebebe;
+    padding: 30px;
+    text-align: center;
+}
+
+.btnrojo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 20px;
 }

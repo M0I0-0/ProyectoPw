@@ -11,35 +11,42 @@
     <?php
 include 'header.php';
 ?>
-        <h2>Solicitud de Seguro</h2>
-    <form action="#" method="post">
-    <label for="nombre">Nombre completo</label>
-    <input type="text" id="nombre" name="nombre" required>
+
+    <h2>Solicitud de Seguro</h2>
+    <div class="contact-form-wrapper">
+        <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre">
 
 
-    <label for="email">Correo electrónico</label>
-    <input type="email" id="email" name="email" required>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email">
 
 
-    <label for="telefono">Teléfono</label>
-    <input type="text" id="telefono" name="telefono" required>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
 
 
-    <label for="tipo">Tipo de seguro</label>
-    <select id="tipo" name="tipo" required>
-    <option value="">Seleccione...</option>
-    <option value="vida">Seguro de Vida</option>
-    <option value="auto">Seguro de Auto</option>
-    <option value="medico">Seguro Médico</option>
-    </select>
+                        <label for="tipo">Tipo de seguro</label>
+                        <select id="tipo" name="tipo">
+                        <option value="">Seleccione...</option>
+                        <option value="vida">Seguro de Vida</option>
+                        <option value="auto">Seguro de Auto</option>
+                        <option value="medico">Seguro Médico</option>
+                        </select>
 
 
-    <label for="comentarios">Comentarios adicionales</label>
-    <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+                        <label for="comentarios">Comentarios adicionales</label>
+                        <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+            </div>
 
 
-    <button type="submit">Enviar solicitud</button>
-    </form>
+
+        <button class="btn" type="submit">Enviar solicitud</button>
+        </form>
+    </div>
+
 
     <div class="contact-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39249.18348242724!2d-89.66171138230918!3d21.008121389572445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56715c77aca301%3A0x9f900e123e02a7ab!2sHDI%20SEGUROS%20M%C3%A9rida!5e0!3m2!1ses-419!2smx!4v1765313339988!5m2!1ses-419!2smx" 

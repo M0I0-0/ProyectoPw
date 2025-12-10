@@ -1,10 +1,5 @@
 <?php
-$conexion = new mysqli("localhost", "root", "", "proyecto");
-
-if ($conexion->connect_errno) {
-    die("Error al conectar: " . $conexion->connect_error);
-}
-
+require "conexion.php";
 $result = $conexion->query("SELECT * FROM solicitudes ORDER BY id DESC");
 ?>
 <!DOCTYPE html>
@@ -15,9 +10,10 @@ $result = $conexion->query("SELECT * FROM solicitudes ORDER BY id DESC");
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<h2>Solicitudes Registradas</h2>
-
+<div class="section-header">
+    <h2>Solicitudes Registradas</h2>
+    <a class="btnrojo" href="dashboard.php">Regresar</a>
+</div>
 <table>
     <thead>
         <tr>
