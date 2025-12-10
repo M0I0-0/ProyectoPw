@@ -24,21 +24,14 @@ include 'header.php';
                     </p>
                     <div class="hero-features">
                         <div class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
                             <span>Cobertura Total</span>
                         </div>
+                        <br>
                         <div class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
                             <span>Asistencia 24/7</span>
                         </div>
+                        <br>
                         <div class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
                             <span>Mejor Precio</span>
                         </div>
                     </div>
@@ -62,7 +55,6 @@ include 'header.php';
             </div>
 
             <table class="services-table" role="table" aria-label="Nuestros Servicios">
-                <tbody>
                     <tr>
                         <td class="service-cell">
                             <h3 class="service-title">Cobertura Amplia</h3>
@@ -96,7 +88,7 @@ include 'header.php';
                             <p class="service-description">Vehículo de cortesía mientras el tuyo está en reparación.</p>
                         </td>
                     </tr>
-                </tbody>
+                
             </table>
 
         </div>

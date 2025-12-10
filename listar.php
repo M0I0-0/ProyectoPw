@@ -1,3 +1,6 @@
+<?php 
+include 'seguridad.php';
+?>
 <?php
 require "conexion.php";
 $result = $conn->query("SELECT * FROM solicitudes ORDER BY id DESC");

@@ -121,25 +121,6 @@ body {
     font-size: 0;
 }
 
-.service-card {
-    display: inline-block;
-    vertical-align: top;
-    width: 33.3333%;
-    padding: 0 15px;
-    margin-bottom: 30px;
-    text-align: center;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-.service-icon {
-    display: inline-block;
-    padding: 15px;
-    background-color: #f8f8fa;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    color: #0056b3;
-}
 
 .service-title {
     font-size: 1.25rem;
@@ -256,12 +237,6 @@ body {
     color: #ffffff;
     font-weight: 700;
     font-size: 1.5rem;
-}
-
-.footer-logo svg {
-    vertical-align: middle;
-    margin-right: 10px;
-    color: #0056b3;
 }
 
 .footer-logo span {
