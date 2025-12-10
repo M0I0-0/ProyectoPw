@@ -1,8 +1,6 @@
 <?php
-// Conexión básica
 include "conexion.php";
 
-// Hacemos la consulta
 $query = "SELECT * FROM interesados ORDER BY id DESC";
 $resultado = $conn->query($query);
 ?>
@@ -19,7 +17,6 @@ $resultado = $conn->query($query);
     <a class="btnrojo" href="dashboard.php">Regresar</a>
 </div>
 
-
 <table>
     <tr>
         <th>ID</th>
@@ -29,25 +26,41 @@ $resultado = $conn->query($query);
         <th>Tipo de Seguro</th>
         <th>Comentarios</th>
         <th>Fecha</th>
+        <th>Eliminar</th>
     </tr>
 
     <?php
     if ($resultado->num_rows > 0) {
         while ($fila = $resultado->fetch_assoc()) {
             echo "<tr>";
-            echo "<td>" . $fila['id'] . "</td>";
-            echo "<td>" . $fila['nombre'] . "</td>";
-            echo "<td>" . $fila['email'] . "</td>";
-            echo "<td>" . $fila['telefono'] . "</td>";
-            echo "<td>" . $fila['tipo'] . "</td>";
-            echo "<td>" . $fila['comentarios'] . "</td>";
-            echo "<td>" . $fila['fecha_registro'] . "</td>";
+            echo "<td>{$fila['id']}</td>";
+            echo "<td>{$fila['nombre']}</td>";
+            echo "<td>{$fila['email']}</td>";
+            echo "<td>{$fila['telefono']}</td>";
+            echo "<td>{$fila['tipo']}</td>";
+            echo "<td>{$fila['comentarios']}</td>";
+            echo "<td>{$fila['fecha_registro']}</td>";
+
+            echo "<td>
+                    <img src='Imagenes/icono_eliminar1.png'
+                         class='icono_eliminar_img'
+                         onclick=\"validar('eliminar_soli.php?id={$fila['id']}')\">
+                  </td>";
+
             echo "</tr>";
         }
     }
     ?>
-
 </table>
+
+<script>
+function validar(url){
+    let eliminar = confirm("¿Realmente deseas ELIMINAR este registro?");
+    if(eliminar){
+        window.location = url;
+    }
+}
+</script>
 
 </body>
 </html>

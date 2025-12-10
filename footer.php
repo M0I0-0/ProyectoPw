@@ -1,4 +1,4 @@
-    <footer class="footer">
+    <div class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -24,8 +24,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="copyright-footer">
                 <p>&copy; 2025 AutoSeguro. Todos los derechos reservados.</p>
             </div>
         </div>
-    </footer>
+</div>
