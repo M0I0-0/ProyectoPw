@@ -43,9 +43,10 @@ $result = $conn->query("SELECT * FROM solicitudes ORDER BY id DESC");
             <td><?= $row['payment_type'] ?></td>
             <td><?= $row['message'] ?></td>
             <td>
-                <?php if ($row['receipt']): ?>
-                    <img src="data:<?= $row['receipt_type'] ?>;base64,<?= base64_encode($row['receipt']) ?>">
+                <?php if (!empty($row['receipt_path'])): ?>
+                    <img src="<?= $row['receipt_path'] ?>" width="120">
                 <?php else: ?>
+                    <span>Sin archivo</span>
                 <?php endif; ?>
             </td>
         </tr>

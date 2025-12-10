@@ -31,7 +31,6 @@
                             <input type="tel" id="phone" name="phone">
                         </div>
 
-                        <!-- Datos del coche -->
                         <div class="form-group">
                             <label for="vehicle">Marca y Modelo del Vehículo</label>
                             <input type="text" id="vehicle" name="vehicle">
@@ -49,7 +48,6 @@
                             <input type="text" id="vin" name="vin">
                         </div>
 
-                        <!-- Pago -->
                         <div class="form-group">
                             <label for="payment_type">Tipo de Pago</label>
                             <select id="payment_type" name="payment_type">
@@ -64,13 +62,11 @@
                             <input type="text" id="bank" name="bank" placeholder="Banco emisor de la transferencia">
                         </div>
 
-                        <!-- Mensaje -->
                         <div class="form-group">
                             <label for="message">Mensaje</label>
                             <textarea id="message" name="message" rows="4"></textarea>
                         </div>
 
-                        <!-- Adjuntar recibo -->
                         <div class="form-group">
                             <label for="receipt">Adjuntar recibo de transferencia (imagen)</label>
                             <input type="file" id="receipt" name="receipt" accept="image/*" capture="environment">

@@ -3,7 +3,7 @@
 include "conexion.php";
 
 // Hacemos la consulta
-$query = "SELECT * FROM solicitudes ORDER BY id DESC";
+$query = "SELECT * FROM interesados ORDER BY id DESC";
 $resultado = $conn->query($query);
 ?>
 <!DOCTYPE html>
@@ -11,41 +11,14 @@ $resultado = $conn->query($query);
 <head>
     <meta charset="UTF-8">
     <title>Lista de Solicitudes</title>
-    <style>
-        table {
-            width: 90%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            border: 1px solid #999;
-            text-align: left;
-        }
-        th {
-            background: #eee;
-        }
-        h2 {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .btn-regresar {
-            display: block;
-            width: 120px;
-            margin: 10px auto;
-            padding: 8px;
-            background: #d33;
-            color: white;
-            text-align: center;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="section-header">
+    <h2>Solicitudes Registradas</h2>
+    <a class="btnrojo" href="dashboard.php">Regresar</a>
+</div>
 
-<h2>Solicitudes Registradas</h2>
-<a class="btn-regresar" href="index.php">Regresar</a>
 
 <table>
     <tr>
@@ -59,7 +32,6 @@ $resultado = $conn->query($query);
     </tr>
 
     <?php
-    // Mostrar los datos
     if ($resultado->num_rows > 0) {
         while ($fila = $resultado->fetch_assoc()) {
             echo "<tr>";
@@ -72,8 +44,6 @@ $resultado = $conn->query($query);
             echo "<td>" . $fila['fecha_registro'] . "</td>";
             echo "</tr>";
         }
-    } else {
-        echo "<tr><td colspan='7' style='text-align:center;'>No hay solicitudes registradas</td></tr>";
     }
     ?>
 

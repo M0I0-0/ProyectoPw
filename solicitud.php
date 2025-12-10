@@ -6,6 +6,7 @@
     <title>Solicitud</title>
     <meta name="description" content="Página de solicitud para AutoSeguro">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 <body>
     <?php
