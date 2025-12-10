@@ -382,16 +382,8 @@ body {
     height: 450px;
     border: none;
     border-radius: 10px;
-    box-shadow: 0px 3px 12px rgba(0,0,0,0.1);
 }
-.form {
-    background-color: #ffffff;
-    width: 350px;
-    margin: 200px auto;
-    padding: 30px;
-    border: 1px solid #e1e1e1;
-    border-radius: 10px;
-}
+/* Formulario */
 
 .form-title {
     color: #333333;
@@ -549,4 +541,38 @@ td img {
     width: 30px;
     height: 30px;
     cursor: pointer;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 0px;
+}
+
+.login-form {
+    display: inline-block;
+    width: 27%;
+    padding: 40px;
+}
+
+.login-image {
+    display: inline-block;
+    width: 40%;
+    height: auto;
+}
+
+.login-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.margen{
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+    width: 1200px;
+    margin: auto;
+    text-align: center;
 }

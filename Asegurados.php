@@ -11,7 +11,7 @@
     <div id="contacto" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Formalario Para Dar De Alta</h2>
+                <h2 class="section-title">Formulario Para Dar De Alta</h2>
                 <p class="section-description">Aqui podras llenar los datos de nuestros candidatos para nuestro seguro</p>
                 <a class="btnrojo" href="dashboard.php">Cancelar</a>
             </div>
