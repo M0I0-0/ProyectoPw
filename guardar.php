@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             (name, email, phone, vehicle, year, plates, vin, payment_type, bank, message, receipt, receipt_type, receipt_name)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-    $stmt = $conexion->prepare($sql);
+    $stmt = $conn->prepare($sql);
     $stmt->bind_param("ssssissssssss",
         $name, $email, $phone, $vehicle, $year, $plates, $vin,
         $payment_type, $bank, $message,
@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
 
     if ($stmt->execute()) {
-        echo "<script> window.location='contacto.php';</script>";
+        echo "<script> window.location='Asegurados.php';</script>";
     } else {
         echo "Error al guardar: " . $stmt->error;
     }
@@ -53,5 +53,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
 }
 
-$conexion->close();
+$conn->close();
 ?>

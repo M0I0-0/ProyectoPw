@@ -1,6 +1,6 @@
 <?php
 require "conexion.php";
-$result = $conexion->query("SELECT * FROM solicitudes ORDER BY id DESC");
+$result = $conn->query("SELECT * FROM solicitudes ORDER BY id DESC");
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -46,7 +46,6 @@ $result = $conexion->query("SELECT * FROM solicitudes ORDER BY id DESC");
                 <?php if ($row['receipt']): ?>
                     <img src="data:<?= $row['receipt_type'] ?>;base64,<?= base64_encode($row['receipt']) ?>">
                 <?php else: ?>
-                    Sin imagen
                 <?php endif; ?>
             </td>
         </tr>
