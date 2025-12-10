@@ -13,7 +13,7 @@
 include 'header.php'; 
 ?>
 
-    <section id="inicio" class="hero">
+    <div id="inicio" class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
@@ -52,85 +52,57 @@ include 'header.php';
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="servicios" class="services">
+    <div id="servicios" class="services">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Nuestros Servicios</h2>
                 <p class="section-description">Ofrecemos una amplia gama de coberturas para proteger tu vehículo</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Cobertura Amplia</h3>
-                    <p class="service-description">Protección completa contra daños materiales, robo total y responsabilidad civil.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <polyline points="12 6 12 12 16 14"/>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Asistencia 24/7</h3>
-                    <p class="service-description">Grúa, asistencia vial y apoyo las 24 horas del día, los 365 días del año.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Atención Personalizada</h3>
-                    <p class="service-description">Agentes especializados que te guían en todo el proceso de contratación.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="12" y1="1" x2="12" y2="23"/>
-                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Pagos Flexibles</h3>
-                    <p class="service-description">Planes de pago mensuales, trimestrales o anuales adaptados a tu presupuesto.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-                            <line x1="12" y1="22.08" x2="12" y2="12"/>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Trámites Rápidos</h3>
-                    <p class="service-description">Proceso de contratación ágil y sencillo, 100% digital.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
-                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
-                            <line x1="6" y1="1" x2="6" y2="4"/>
-                            <line x1="10" y1="1" x2="10" y2="4"/>
-                            <line x1="14" y1="1" x2="14" y2="4"/>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Auto de Reemplazo</h3>
-                    <p class="service-description">Vehículo de cortesía mientras el tuyo está en reparación.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="video" class="video-section">
+            <table class="services-table" role="table" aria-label="Nuestros Servicios">
+                <tbody>
+                    <tr>
+                        <td class="service-cell">
+                            <h3 class="service-title">Cobertura Amplia</h3>
+                            <p class="service-description">Protección completa contra daños materiales, robo total y responsabilidad civil.</p>
+                        </td>
+
+                        <td class="service-cell">
+                            <h3 class="service-title">Asistencia 24/7</h3>
+                            <p class="service-description">Grúa, asistencia vial y apoyo las 24 horas del día, los 365 días del año.</p>
+                        </td>
+
+                        <td class="service-cell">
+                            <h3 class="service-title">Atención Personalizada</h3>
+                            <p class="service-description">Agentes especializados que te guían en todo el proceso de contratación.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-cell">
+                            <h3 class="service-title">Pagos Flexibles</h3>
+                            <p class="service-description">Planes de pago mensuales, trimestrales o anuales adaptados a tu presupuesto.</p>
+                        </td>
+
+                        <td class="service-cell">
+                            <h3 class="service-title">Trámites Rápidos</h3>
+                            <p class="service-description">Proceso de contratación ágil y sencillo, 100% digital.</p>
+                        </td>
+
+                        <td class="service-cell">
+                            <h3 class="service-title">Auto de Reemplazo</h3>
+                            <p class="service-description">Vehículo de cortesía mientras el tuyo está en reparación.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <div id="video" class="video-section">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Conoce Más Sobre Nosotros</h2>
@@ -142,12 +114,10 @@ include 'header.php';
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
 <?php
 include 'footer.php';
 ?>
-
-    <script src="script.js"></script>
 </body>
 </html>

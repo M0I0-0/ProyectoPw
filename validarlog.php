@@ -1,13 +1,12 @@
 <?php
-session_start();
 require "conexion.php";
+session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $email    = $_POST["email"];
     $password = $_POST["password"];
 
-    // Consulta directa y sencilla
     $sql = "SELECT * FROM usuarios 
             WHERE email = '$email' 
             AND password = '$password'";
@@ -17,9 +16,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mysqli_num_rows($resultado) > 0) {
 
         $usuario = mysqli_fetch_assoc($resultado);
-
-        $_SESSION["usuario_id"] = $usuario["id"];
-        $_SESSION["usuario_nombre"] = $usuario["nombre"];
+        $_SESSION["usuario_id"]      = $usuario["id"];
+        $_SESSION["usuario_nombre"]  = $usuario["nombre"];
+        $_SESSION["autentificado"]   = "SI";
 
         echo "
         <script>
